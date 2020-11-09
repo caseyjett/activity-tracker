@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity Tracker</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <main>
+        <form action="/form-submissions" method="POST">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date">
+            <label for="activity">Activity Type</label>
+            <select name="activity" id="activity" name="activity">
+                <option value="trapeze">Trapeze</option>
+                <option value="silks">Silks</option>
+                <option value="running">Running</option>
+                <option value="yoga">Yoga</option>
+            </select>
+            <label for="time">Duration in Minutes</label>
+            <input type="number" id="time" name="time">
+            <input type="submit" value="Submit" >
+        </form>
+    </main>
+    
+    
+    <section>
+        <div class="image-container">
+                <form class="image-search">
+                    <input type="text" placeholder="Search Images">
+                </form> 
+            <div class="gallery">
+
+            </div>
+            <a class="load-more" data-img="curated">Load More</a>
+        </div>
+    </section>
+    <script src="../app.js" type="module"></script>
+    <!-- <script src="index.js" type="module"></script> -->
+</body>
+</html>

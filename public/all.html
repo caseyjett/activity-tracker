@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Activity Data</h1>
+
+    <script>
+
+        getData(); 
+        async function getData() {
+            const response = await fetch('/all'); 
+            const data = await response.json(); 
+
+            for (item of data) {
+                const root = document.createElement('div'); 
+                const day = document.createElement('div'); 
+                const activity = document.createElement('div'); 
+                const duration = document.createElement('div'); 
+                
+                day.textContent = `day: ${item.date}`; 
+                activity.textContent = `activity: ${item.activity}`; 
+                duration.textContent = `duration: ${item.time} minutes`;
+
+                root.append(day, activity, duration); 
+                document.body.append(root); 
+            }
+            console.log(data); 
+        }
+
+    </script>
+</body>
+</html>
