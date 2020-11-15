@@ -24,6 +24,8 @@ app.get('/all', (req, res) => {
             return; 
         }
         res.json(data); 
+  
+        
     })  
 })
 

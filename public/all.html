@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/logStyles.css">
 </head>
 <body>
-    <h1>Activity Data</h1>
+    <h1>Activity Log</h1>
 
     <script>
 
@@ -18,13 +19,14 @@
             //None of this works, all of the data is posted to the page
             for (item of data) {
                 const root = document.createElement('div'); 
+                root.className = 'workout'
                 const day = document.createElement('div'); 
                 const activity = document.createElement('div'); 
                 const duration = document.createElement('div'); 
                 
-                day.textContent = `day: ${item.date}`; 
-                activity.textContent = `activity: ${item.activity}`; 
-                duration.textContent = `duration: ${item.time} minutes`;
+                day.textContent = `Date: ${item.date}`; 
+                activity.textContent = `Activity: ${item.activity}`; 
+                duration.textContent = `Duration: ${item.time} minutes`;
 
                 root.append(day, activity, duration); 
                 document.body.append(root); 
