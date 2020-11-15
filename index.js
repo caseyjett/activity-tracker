@@ -3,8 +3,9 @@ const app = express();
 const bodyParser = require('body-parser'); 
 const DataStore = require('nedb'); 
 const { response } = require('express');
+const alert = require('alert'); 
 
-const database = new DataStore('database.db'); 
+const database = new DataStore({filename: 'anything.db', autoload: true});
 database.loadDatabase(); 
 
 
@@ -31,10 +32,10 @@ app.get('/all', (req, res) => {
     const timestamp = Date.now(); 
     data.timestamp = timestamp; 
     database.insert(data); 
-    // console.log(database); 
-    // res.end(); 
-    
-    res.json(data)
-
+   
+    // // res.end();  
+    // res.json(data)
+    res.redirect('/');
+    alert('Thanks!')
 })
 

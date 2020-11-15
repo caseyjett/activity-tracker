@@ -15,6 +15,7 @@
             const response = await fetch('/all'); 
             const data = await response.json(); 
 
+            //None of this works, all of the data is posted to the page
             for (item of data) {
                 const root = document.createElement('div'); 
                 const day = document.createElement('div'); 
