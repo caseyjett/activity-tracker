@@ -123,6 +123,11 @@ form ion-icon{
     cursor: pointer; 
     font-size: 15px; 
 }
+
+canvas {
+  max-width: 45%; 
+}
+
 @media only screen and (min-width: 900px){
  .container{
    max-width: 1160px;
@@ -146,3 +151,4 @@ form ion-icon{
  }
  
 }
+

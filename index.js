@@ -23,9 +23,7 @@ app.get('/all', (req, res) => {
             response.end(); 
             return; 
         }
-        res.json(data); 
-  
-        
+        res.json(data);    
     })  
 })
 
