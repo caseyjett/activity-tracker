@@ -8,4 +8,4 @@ The three features that I've included are:
 
 To run the application, you'll need to run `node index.js` and then go to `localhost:3000` in your browser. 
 
-You can see that the databases is storing new inputs by visiting `localhost:3000/all`
+You can see that the databases is storing new inputs by visiting `localhost:3000/all.html`
