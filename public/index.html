@@ -9,19 +9,25 @@
 </head>
 
 <body>
+    <header>
+        <h1>Track Your Activities</h1>
+    </header>
     <main>
-        <form action="/form-submissions" method="POST">
+  
+        <form action="/form-submissions" method="POST" class="activityInput">
             <label for="date">Date:</label>
             <input type="date" id="date" name="date">
-            <label for="activity">Activity Type</label>
+            <label for="activity">Activity Type:</label>
             <select name="activity" id="activity" name="activity">
                 <option value="trapeze">Trapeze</option>
                 <option value="silks">Silks</option>
                 <option value="running">Running</option>
                 <option value="yoga">Yoga</option>
             </select>
-            <label for="time">Duration in Minutes</label>
+            <label for="time">Duration in Minutes:</label>
             <input type="number" id="time" name="time">
+            <!-- <label for="time">Focus:</label>
+            <input type="text" id="focus" name="focus"> -->
             <input type="submit" value="Submit" >
         </form>
         
