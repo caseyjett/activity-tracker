@@ -7,6 +7,6 @@ The three features that I've included are:
 * Create a server with at least one route and connect it to your application using ExpressJS
 * Visualize data in a graph, chart, or other visual representation of data
 
-To run the application, you'll need to run `node index.js` and then go to `localhost:3000` in your browser. 
+To run the application, you'll need to type `npm install` into your terminal to install dependencies and then `node index.js`. Next go to `localhost:3000` in your browser. 
 
 You can see that the databases is storing new inputs by visiting `localhost:3000/all.html`
